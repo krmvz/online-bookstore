@@ -1,0 +1,87 @@
+import "./App.css";
+import { useState } from "react";
+
+import { RandomTab } from "./tabs/random.tab";
+import { BirthdateTab } from "./tabs/birthdate.tab";
+import { WishesTab } from "./tabs/wishes.tab";
+import { ColorTab } from "./tabs/color.tab";
+
+function parseRouteTab(): "color" | "random" | "birthday" | "wishes" {
+  const path = window.location.pathname.slice(1); // 
+
+  if (path === "") {
+    return "color";
+  }
+
+  return path as "color" | "random" | "birthday" | "wishes";
+}
+
+function App() {
+  const [currentTab, setCurrentTab] = useState<
+    "color" | "random" | "birthday" | "wishes"
+  >(parseRouteTab());
+
+  const [color, setColor] = useState("#213547");
+
+  console.log(window.location.pathname);
+
+  function handleTabClick(tab: "color" | "random" | "birthday" | "wishes") {
+    setCurrentTab(tab);
+    window.history.pushState({}, "", `/${tab}`);
+  }
+
+  return (
+    <div style={{ width: "100%", color: color }}>
+      <button
+        style={{
+          color: currentTab === "color" ? "white" : color,
+          backgroundColor: currentTab === "color" ? color : "#f9f9f9",
+        }}
+        onClick={() => handleTabClick("color")}
+      >
+        Цвет шрифта
+      </button>
+      <button
+        style={{
+          color: currentTab === "random" ? "white" : color,
+          backgroundColor: currentTab === "random" ? color : "#f9f9f9",
+        }}
+        onClick={() => handleTabClick("random")}
+      >
+        Угадай число
+      </button>
+      <button
+        style={{
+          color: currentTab === "birthday" ? "white" : color,
+          backgroundColor: currentTab === "birthday" ? color : "#f9f9f9",
+        }}
+        onClick={() => handleTabClick("birthday")}
+      >
+        День рождения
+      </button>
+      <button
+        style={{
+          color: currentTab === "wishes" ? "white" : color,
+          backgroundColor: currentTab === "wishes" ? color : "#f9f9f9",
+        }}
+        onClick={() => handleTabClick("wishes")}
+      >
+        Желания
+      </button>
+
+      {/* wishes */}
+      {currentTab === "wishes" && <WishesTab color={color} />}
+
+      {/* color */}
+      {currentTab === "color" && <ColorTab color={color} setColor={setColor} />}
+
+      {/* random */}
+      {currentTab === "random" && <RandomTab color={color} />}
+
+      {/* birthday */}
+      {currentTab === "birthday" && <BirthdateTab color={color} />}
+    </div>
+  ); // JSX = HTML + JS
+}
+
+export default App;

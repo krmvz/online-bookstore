@@ -1,0 +1,112 @@
+.user-page {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .book-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .book-header {
+    display: flex;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #e1e1e1;
+  }
+  
+  .book-image {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .book-info {
+    flex: 1;
+  }
+  
+  .book-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .book-author {
+    color: #777;
+    font-size: 1.1rem;
+  }
+  
+  .book-price {
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .book-category {
+    color: #555;
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+  
+  .book-details {
+    padding: 20px;
+    background-color: #fafafa;
+  }
+  
+  .book-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .book-meta p {
+    font-size: 1rem;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  .book-footer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 2px solid #e1e1e1;
+    text-align: center;
+  }
+  
+  .book-rating {
+    font-size: 1.2rem;
+    color: #ff8c00;
+    font-weight: bold;
+  }
+  
+  .book-article-number {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .no-book-found {
+    text-align: center;
+    color: #d9534f;
+    font-size: 1.2rem;
+  }
+  

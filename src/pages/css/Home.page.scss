@@ -1,0 +1,108 @@
+.home-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  
+    .hero-section {
+      background: linear-gradient(rgba(44, 82, 130, 0.9), rgba(44, 82, 130, 0.9)),
+                  url('/path-to-your-background-image.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 4rem 2rem;
+      border-radius: 12px;
+      margin-bottom: 3rem;
+      text-align: center;
+  
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+      }
+    }
+  
+    section {
+      margin-bottom: 3rem;
+  
+      h2 {
+        font-size: 1.8rem;
+        color: #2c5282;
+        margin-bottom: 1.5rem;
+      }
+    }
+  
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+  
+      .book-card {
+        background: white;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+        img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          border-radius: 4px;
+          margin-bottom: 1rem;
+        }
+  
+        h3 {
+          font-size: 1.1rem;
+          margin-bottom: 0.5rem;
+          color: #333;
+        }
+  
+        .author {
+          color: #666;
+          font-size: 0.9rem;
+          margin-bottom: 0.5rem;
+        }
+  
+        .price {
+          color: #2c5282;
+          font-weight: bold;
+        }
+      }
+    }
+  
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.5rem;
+  
+      .category-card {
+        background: #f8f9fa;
+        padding: 2rem;
+        border-radius: 8px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+  
+        h3 {
+          color: #2c5282;
+        }
+  
+        &:hover {
+          background: #2c5282;
+          
+          h3 {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home-page {
+      padding: 1rem;
+    }
+  }

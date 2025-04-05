@@ -1,0 +1,41 @@
+/* Comment Section */
+.comment_section {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.comment_title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.comment_list {
+  list-style: none;
+  padding: 0;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.comment_item {
+  background: #f2f2f2;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.comment_input {
+  width: 100%;
+  padding: 8px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+  resize: none;
+}
+
+.comment_input:focus {
+  border-color: #3498db;
+  outline: none;
+}/*# sourceMappingURL=Book.page_20250402185901.css.map */

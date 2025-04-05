@@ -1,0 +1,83 @@
+.user-page {
+  font-family: "Arial", sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.book-details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-image {
+  width: 200px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+.book-info {
+  max-width: 600px;
+}
+
+.book-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.book-price,
+.book-e-price,
+.book-audio-price,
+.book-author,
+.book-publisher,
+.book-year,
+.book-series,
+.book-category,
+.book-pages,
+.book-format,
+.book-binding,
+.book-isbn,
+.book-age-restriction,
+.book-language,
+.book-title-in-another-language,
+.book-article-number,
+.book-short-info,
+.book-rating,
+.book-country-category {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #555;
+}
+
+.book-rating {
+  font-weight: bold;
+}
+
+.book-short-info {
+  font-style: italic;
+  color: #777;
+  margin-top: 10px;
+}
+
+.no-book-found {
+  text-align: center;
+  color: #d9534f;
+  font-size: 1.2rem;
+}/*# sourceMappingURL=Book.page_20250402170434.css.map */

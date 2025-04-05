@@ -1,0 +1,95 @@
+{
+    "books": [
+      {
+        "id": 1,
+        "title": "The Pragmatic Programmer",
+        "author": "Andrew Hunt, David Thomas",
+        "genre": "Programming",
+        "price": 1800,
+        "currency": "KGS",
+        "cover": "https://example.com/pragmatic-programmer.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Clean Code",
+        "author": "Robert C. Martin",
+        "genre": "Programming",
+        "price": 2000,
+        "currency": "KGS",
+        "cover": "https://example.com/clean-code.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "genre": "Self-help",
+        "price": 1500,
+        "currency": "KGS",
+        "cover": "https://example.com/atomic-habits.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Deep Work",
+        "author": "Cal Newport",
+        "genre": "Productivity",
+        "price": 1700,
+        "currency": "KGS",
+        "cover": "https://example.com/deep-work.jpg"
+      },
+      {
+        "id": 5,
+        "title": "You Don't Know JS",
+        "author": "Kyle Simpson",
+        "genre": "Programming",
+        "price": 1900,
+        "currency": "KGS",
+        "cover": "https://example.com/ydkjs.jpg"
+      },
+      {
+        "id": 6,
+        "title": "The Lean Startup",
+        "author": "Eric Ries",
+        "genre": "Business",
+        "price": 1600,
+        "currency": "KGS",
+        "cover": "https://example.com/lean-startup.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Thinking, Fast and Slow",
+        "author": "Daniel Kahneman",
+        "genre": "Psychology",
+        "price": 1800,
+        "currency": "KGS",
+        "cover": "https://example.com/thinking-fast-slow.jpg"
+      },
+      {
+        "id": 8,
+        "title": "The Art of Computer Programming",
+        "author": "Donald Knuth",
+        "genre": "Computer Science",
+        "price": 5000,
+        "currency": "KGS",
+        "cover": "https://example.com/art-of-cp.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Eloquent JavaScript",
+        "author": "Marijn Haverbeke",
+        "genre": "Programming",
+        "price": 1700,
+        "currency": "KGS",
+        "cover": "https://example.com/eloquent-js.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Zero to One",
+        "author": "Peter Thiel",
+        "genre": "Business",
+        "price": 1800,
+        "currency": "KGS",
+        "cover": "https://example.com/zero-to-one.jpg"
+      }
+    ]
+  }
+  
