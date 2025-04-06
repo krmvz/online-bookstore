@@ -14,64 +14,33 @@
   justify-content: center;
   text-align: center;
   padding: 0 20px;
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('/path-to-your-pattern.png');
-    opacity: 0.1;
-  }
 
   .hero-content {
-    position: relative;
-    z-index: 1;
     color: white;
 
     h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       margin-bottom: 20px;
       font-weight: 700;
     }
 
     p {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       opacity: 0.9;
-      margin-bottom: 30px;
-    }
-
-    .browse-button {
-      display: inline-block;
-      padding: 15px 30px;
-      background: white;
-      color: #2c5282;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: transform 0.3s ease;
-
-      &:hover {
-        transform: translateY(-3px);
-      }
     }
   }
 }
 
 .section-title {
   text-align: center;
-  margin: 60px 0 40px;
+  margin-bottom: 40px;
 
   h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #2d3748;
     position: relative;
     display: inline-block;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 
     &::after {
       content: '';
@@ -79,7 +48,7 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 60px;
+      width: 60%;
       height: 3px;
       background: #2c5282;
       border-radius: 2px;
@@ -93,25 +62,19 @@
   gap: 30px;
   margin-bottom: 60px;
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   .book-card {
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s ease;
-
-    &:hover {
-      transform: translateY(-10px);
-
-      .book-image img {
-        transform: scale(1.05);
-      }
-    }
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     .book-image {
-      height: 350px;
+      height: 300px;
       overflow: hidden;
 
       img {
@@ -126,21 +89,21 @@
       padding: 20px;
 
       h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: #2d3748;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
       }
 
       .author {
         color: #718096;
         font-size: 0.9rem;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
       }
 
       .price {
         color: #2c5282;
         font-weight: 600;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
     }
   }
@@ -153,37 +116,18 @@
   margin-bottom: 60px;
 
   .category-card {
-    background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+    background: white;
     padding: 30px;
     border-radius: 15px;
     text-align: center;
-    color: white;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-
-    &:hover {
-      transform: translateY(-5px);
-
-      .explore-link {
-        opacity: 1;
-      }
-    }
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
 
     h3 {
-      font-size: 1.3rem;
-      margin-bottom: 15px;
-    }
-
-    .explore-link {
       color: white;
-      text-decoration: none;
-      opacity: 0.8;
-      transition: opacity 0.3s ease;
-
-      &:hover {
-        opacity: 1;
-      }
+      font-size: 1.2rem;
+      margin: 0;
     }
   }
 }
@@ -191,23 +135,19 @@
 @media (max-width: 768px) {
   .hero-section {
     height: 400px;
-    
+
     .hero-content {
       h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
 
       p {
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
     }
   }
 
   .section-title h2 {
-    font-size: 1.8rem;
-  }
-
-  .books-grid {
-    gap: 20px;
+    font-size: 1.5rem;
   }
 }

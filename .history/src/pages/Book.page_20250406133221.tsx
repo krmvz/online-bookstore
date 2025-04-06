@@ -14,16 +14,11 @@ function BookPage() {
     setBook(foundBook || null);
   }, [id]);
 
-  const handleAddToCart = async () => {
-    if (!book) return;
-    
-    await addToCart({
-      bookId: book.id,
-      title: book.name, // Changed from book.title to book.name
-      price: book.price,
-      quantity: 1,
-      imageUrl: book.image // Changed from book.imageUrl to book.image
-    });
+  const handleAddToCart = () => {
+    if (book) {
+      addToCart(book);
+      alert(`${book.name} себетке кошулду!`);
+    }
   };
 
   if (!book) {

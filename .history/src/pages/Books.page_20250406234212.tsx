@@ -4,16 +4,6 @@ import { useCart } from "../context/CartContext";
 import { Link } from "react-router-dom";
 import './css/Books.page.scss';
 
-interface Book {
-  id: string;
-  name: string;
-  author: string;
-  price: number;
-  image: string;
-  category: string;
-  description?: string;
-}
-
 function BooksPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -26,7 +16,7 @@ function BooksPage() {
   const booksPerPage = 8;
   const categories = ["all", ...new Set(books.map(book => book.category))];
 
-  const handleAddToCart = async (book: Book) => {
+  const handleAddToCart = async (book: any) => {
     setAddingBookId(book.id);
     try {
       await addToCart({

@@ -4,37 +4,45 @@
   padding: 2rem;
 }
 .books_page .page_title {
-  font-size: 2.5rem;
-  color: #333;
+  text-align: center;
+  color: #2d3748;
   margin-bottom: 2rem;
+  font-size: 2.5rem;
 }
 .books_page .search_area {
-  display: flex;
-  gap: 1rem;
   margin-bottom: 2rem;
 }
 .books_page .search_area .search_input {
-  flex: 1;
-  padding: 0.8rem;
-  border: 2px solid #eee;
-  border-radius: 6px;
-  font-size: 1rem;
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1.1rem;
 }
 .books_page .search_area .search_input:focus {
   outline: none;
   border-color: #2c5282;
 }
-.books_page .search_area .search_btn {
-  padding: 0.8rem 1.5rem;
-  background: #2c5282;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+.books_page .filters {
+  margin-bottom: 2rem;
 }
-.books_page .search_area .search_btn:hover {
-  background: #1a365d;
+.books_page .filters .filter_controls {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.books_page .filters .filter_controls select {
+  padding: 0.8rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+  min-width: 200px;
+}
+.books_page .filters .filter_controls select:focus {
+  outline: none;
+  border-color: #2c5282;
 }
 .books_page .books_list {
   display: grid;
@@ -43,7 +51,7 @@
 }
 .books_page .books_list .book_card {
   background: white;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -56,16 +64,17 @@
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 4px;
+  border-radius: 8px;
   margin-bottom: 1rem;
 }
 .books_page .books_list .book_card .book_title {
+  color: #2d3748;
   font-size: 1.2rem;
-  color: #333;
   margin-bottom: 0.5rem;
+  text-decoration: none;
 }
 .books_page .books_list .book_card .book_author {
-  color: #666;
+  color: #718096;
   margin-bottom: 0.5rem;
 }
 .books_page .books_list .book_card .book_price {
@@ -89,7 +98,93 @@
 }
 .books_page .no_results {
   text-align: center;
-  color: #666;
+  color: #718096;
   font-size: 1.2rem;
-  padding: 2rem;
+  margin-top: 2rem;
+}
+.books_page .filter_controls {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+.books_page .filter_controls select {
+  padding: 0.8rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+  min-width: 200px;
+}
+.books_page .filter_controls select:focus {
+  outline: none;
+  border-color: #2c5282;
+}
+.books_page .filter_controls .view_toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+.books_page .filter_controls .view_toggle .toggle_btn {
+  padding: 0.8rem 1.2rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.books_page .filter_controls .view_toggle .toggle_btn:hover {
+  border-color: #2c5282;
+  color: #2c5282;
+}
+.books_page .filter_controls .view_toggle .toggle_btn.active {
+  background: #2c5282;
+  color: white;
+  border-color: #2c5282;
+}
+.books_page .books_list.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.books_page .books_list.list .book_card {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.books_page .books_list.list .book_card .book_image {
+  width: 150px;
+  height: 200px;
+  flex-shrink: 0;
+}
+.books_page .books_list.list .book_card .book_title {
+  font-size: 1.4rem;
+}
+.books_page .books_list.list .book_card .add_to_basket_btn {
+  width: auto;
+  min-width: 200px;
+  margin-left: auto;
+}
+.books_page .pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+.books_page .pagination .page_btn {
+  padding: 0.8rem 1.2rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.books_page .pagination .page_btn:hover {
+  border-color: #2c5282;
+  color: #2c5282;
+}
+.books_page .pagination .page_btn.active {
+  background: #2c5282;
+  color: white;
+  border-color: #2c5282;
 }/*# sourceMappingURL=Books.page.css.map */

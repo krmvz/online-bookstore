@@ -1,0 +1,123 @@
+.books_page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  
+    .page_title {
+      text-align: center;
+      color: #2d3748;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+    }
+  
+    .search_area {
+      margin-bottom: 2rem;
+      
+      .search_input {
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid #e2e8f0;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        
+        &:focus {
+          outline: none;
+          border-color: #2c5282;
+        }
+      }
+    }
+
+    
+    .filters {
+        margin-bottom: 2rem;
+    
+        .filter_controls {
+          display: flex;
+          gap: 1rem;
+          margin-top: 1rem;
+    
+          select {
+            padding: 0.8rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: white;
+            cursor: pointer;
+            min-width: 200px;
+    
+            &:focus {
+              outline: none;
+              border-color: #2c5282;
+            }
+          }
+        }
+      }
+  
+    .books_list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 2rem;
+      
+      .book_card {
+        background: white;
+        border-radius: 12px;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        
+        &:hover {
+          transform: translateY(-5px);
+        }
+  
+        .book_image {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          border-radius: 8px;
+          margin-bottom: 1rem;
+        }
+  
+        .book_title {
+          color: #2d3748;
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+          text-decoration: none;
+        }
+  
+        .book_author {
+          color: #718096;
+          margin-bottom: 0.5rem;
+        }
+  
+        .book_price {
+          color: #2c5282;
+          font-weight: bold;
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+        }
+  
+        .add_to_basket_btn {
+          width: 100%;
+          padding: 0.8rem;
+          background: #2c5282;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: background 0.3s ease;
+  
+          &:hover {
+            background: #1a365d;
+          }
+        }
+      }
+    }
+  
+    .no_results {
+      text-align: center;
+      color: #718096;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+    }
+    
+  }

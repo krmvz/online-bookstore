@@ -7,6 +7,7 @@ import './css/Book.page.scss';
 function BookPage() {
   const { id } = useParams();
   const [book, setBook] = useState<Book | null>(null);
+  const [selectedFormat, setSelectedFormat] = useState<'physical' | 'ebook' | 'audio'>('physical');
   const { addToCart } = useCart();
 
   useEffect(() => {
@@ -14,16 +15,17 @@ function BookPage() {
     setBook(foundBook || null);
   }, [id]);
 
-  const handleAddToCart = async () => {
-    if (!book) return;
-    
-    await addToCart({
-      bookId: book.id,
-      title: book.name, // Changed from book.title to book.name
-      price: book.price,
-      quantity: 1,
-      imageUrl: book.image // Changed from book.imageUrl to book.image
-    });
+  const handleAddToCart = () => {
+    if (book) {
+      const bookWithSelectedPrice = {
+        ...book,
+        price: selectedFormat === 'physical' ? book.price 
+             : selectedFormat === 'ebook' ? book.e_price 
+             : book.audio_price
+      };
+      addToCart(bookWithSelectedPrice);
+      alert(`${book.name} себетке кошулду!`);
+    }
   };
 
   if (!book) {
@@ -44,18 +46,37 @@ function BookPage() {
             <p><strong>Басмакана:</strong> {book.publisher}</p>
             <p><strong>Басылган жылы:</strong> {book.publication_year}</p>
             <p><strong>Беттердин саны:</strong> {book.number_of_pages}</p>
-            <p><strong>Форматы:</strong> {book.format}</p>
-            <p><strong>Мукабасы:</strong> {book.binding}</p>
             <p><strong>ISBN:</strong> {book.ISBN}</p>
-            <p><strong>Тили:</strong> {book.language}</p>
           </div>
           <p className="description">{book.short_info_about_book}</p>
+          
+          <div className="format-selection">
+            <button 
+              className={`format-btn ${selectedFormat === 'physical' ? 'active' : ''}`}
+              onClick={() => setSelectedFormat('physical')}
+            >
+              Китеп ({book.price} сом)
+            </button>
+            <button 
+              className={`format-btn ${selectedFormat === 'ebook' ? 'active' : ''}`}
+              onClick={() => setSelectedFormat('ebook')}
+            >
+              Электрондук ({book.e_price} сом)
+            </button>
+            <button 
+              className={`format-btn ${selectedFormat === 'audio' ? 'active' : ''}`}
+              onClick={() => setSelectedFormat('audio')}
+            >
+              Аудио ({book.audio_price} сом)
+            </button>
+          </div>
+
           <div className="price-section">
-            <div className="prices">
-              <p className="price">Китеп: {book.price} сом</p>
-              <p className="e-price">Электрондук: {book.e_price} сом</p>
-              <p className="audio-price">Аудио: {book.audio_price} сом</p>
-            </div>
+            <p className="price">
+              {selectedFormat === 'physical' ? book.price 
+               : selectedFormat === 'ebook' ? book.e_price 
+               : book.audio_price} сом
+            </p>
             <button className="add-to-cart-btn" onClick={handleAddToCart}>
               Куржунга кошуу 🛒
             </button>

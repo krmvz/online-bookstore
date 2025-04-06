@@ -1,0 +1,124 @@
+.book-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  
+    .book-container {
+      display: flex;
+      gap: 3rem;
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+      .book-image {
+        flex: 0 0 400px;
+  
+        img {
+          width: 100%;
+          height: 600px;
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+      }
+  
+      .book-info {
+        flex: 1;
+  
+        h1 {
+          font-size: 2.5rem;
+          color: #2d3748;
+          margin-bottom: 1rem;
+        }
+  
+        .author {
+          font-size: 1.2rem;
+          color: #718096;
+          margin-bottom: 0.5rem;
+        }
+  
+        .category {
+          color: #4a5568;
+          font-size: 1rem;
+          margin-bottom: 1.5rem;
+        }
+  
+        .book-metadata {
+          margin-bottom: 2rem;
+          
+          p {
+            margin: 0.5rem 0;
+            color: #4a5568;
+          }
+  
+          strong {
+            color: #2d3748;
+          }
+        }
+  
+        .description {
+          color: #4a5568;
+          line-height: 1.6;
+          font-size: 1.1rem;
+          margin-bottom: 2rem;
+        }
+  
+        .format-selection {
+          display: flex;
+          gap: 1rem;
+          margin-bottom: 2rem;
+  
+          .format-btn {
+            flex: 1;
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            background: white;
+            color: #4a5568;
+            cursor: pointer;
+            transition: all 0.3s ease;
+  
+            &:hover {
+              border-color: #2c5282;
+              color: #2c5282;
+            }
+  
+            &.active {
+              background: #2c5282;
+              color: white;
+              border-color: #2c5282;
+            }
+          }
+        }
+  
+        .price-section {
+          margin-top: auto;
+  
+          .price {
+            font-size: 2rem;
+            color: #2c5282;
+            font-weight: bold;
+            margin-bottom: 1rem;
+          }
+  
+          .add-to-cart-btn {
+            width: 100%;
+            max-width: 300px;
+            padding: 1rem;
+            background: #2c5282;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+  
+            &:hover {
+              background: #1a365d;
+            }
+          }
+        }
+      }
+    }
+  }
