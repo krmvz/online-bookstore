@@ -1,0 +1,72 @@
+.book-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.book-details .book-container {
+  display: flex;
+  gap: 3rem;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.book-details .book-container .book-image {
+  flex: 0 0 400px;
+}
+.book-details .book-container .book-image img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.book-details .book-container .book-info {
+  flex: 1;
+}
+.book-details .book-container .book-info h1 {
+  font-size: 2.5rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+.book-details .book-container .book-info .author {
+  font-size: 1.2rem;
+  color: #718096;
+  margin-bottom: 0.5rem;
+}
+.book-details .book-container .book-info .category {
+  color: #4a5568;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.book-details .book-container .book-info .description {
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.book-details .book-container .book-info .price-section {
+  margin-top: auto;
+}
+.book-details .book-container .book-info .price-section .price {
+  font-size: 2rem;
+  color: #2c5282;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.book-details .book-container .book-info .price-section .add-to-cart-btn {
+  width: 100%;
+  max-width: 300px;
+  padding: 1rem;
+  background: #2c5282;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.book-details .book-container .book-info .price-section .add-to-cart-btn:hover {
+  background: #1a365d;
+}/*# sourceMappingURL=Book.page_20250406124808.css.map */

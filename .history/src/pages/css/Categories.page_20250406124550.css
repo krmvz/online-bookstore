@@ -1,0 +1,92 @@
+.categories-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.categories-page .page-title {
+  font-size: 2.5rem;
+  color: #2c5282;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.categories-page .categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.categories-page .categories-grid .category-card {
+  padding: 1.5rem;
+  background: white;
+  border: 2px solid #edf2f7;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  color: #2d3748;
+}
+.categories-page .categories-grid .category-card:hover {
+  transform: translateY(-2px);
+  border-color: #2c5282;
+}
+.categories-page .categories-grid .category-card.active {
+  background: #2c5282;
+  color: white;
+  border-color: #2c5282;
+}
+.categories-page .books-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+.categories-page .books-section .books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.categories-page .books-section .books-grid .book-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.categories-page .books-section .books-grid .book-card:hover {
+  transform: translateY(-5px);
+}
+.categories-page .books-section .books-grid .book-card .book-image {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.categories-page .books-section .books-grid .book-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.categories-page .books-section .books-grid .book-card .author {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+.categories-page .books-section .books-grid .book-card .price {
+  color: #2c5282;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.categories-page .books-section .books-grid .book-card .add-to-cart-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #2c5282;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.categories-page .books-section .books-grid .book-card .add-to-cart-btn:hover {
+  background: #1a365d;
+}/*# sourceMappingURL=Categories.page_20250406124550.css.map */

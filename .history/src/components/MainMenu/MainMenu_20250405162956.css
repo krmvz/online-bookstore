@@ -1,0 +1,98 @@
+.main-menu {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.main-menu .menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c5282;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.main-menu .logo a:hover {
+  color: #1a365d;
+}
+
+.main-menu .nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-menu .nav-links .menu-link {
+  color: #4a5568;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.main-menu .nav-links .menu-link:hover {
+  background: #f7fafc;
+  color: #2c5282;
+}
+
+.main-menu .nav-links .menu-link.active {
+  background: #2c5282;
+  color: white;
+}
+
+.main-menu .nav-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-menu .nav-actions .icon-link {
+  font-size: 1.2rem;
+  color: #4a5568;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.main-menu .nav-actions .icon-link:hover {
+  background: #f7fafc;
+  color: #2c5282;
+}
+
+.main-menu .nav-actions .icon-link.active {
+  background: #2c5282;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .main-menu {
+    padding: 1rem;
+  }
+  .main-menu .menu-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .main-menu .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .main-menu .nav-actions {
+    justify-content: center;
+  }
+} /*# sourceMappingURL=MainMenu_20250405162956.css.map */

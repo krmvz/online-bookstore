@@ -1,0 +1,52 @@
+.main-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.main-menu .menu-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-menu .logo a {
+  font-size: 1.5rem;
+  color: #2c5282;
+  text-decoration: none;
+  font-weight: bold;
+}
+.main-menu .nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.main-menu .nav-links .menu-link {
+  color: #4a5568;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.main-menu .nav-links .menu-link:hover {
+  color: #2c5282;
+}
+.main-menu .nav-links .menu-link.active {
+  color: #2c5282;
+  font-weight: bold;
+}
+.main-menu .nav-actions {
+  display: flex;
+  gap: 1rem;
+}
+.main-menu .nav-actions .icon-link {
+  font-size: 1.2rem;
+  color: #4a5568;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.main-menu .nav-actions .icon-link:hover {
+  color: #2c5282;
+}/*# sourceMappingURL=MainMenu_20250405172822.css.map */

@@ -1,0 +1,119 @@
+.user-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.user-page .title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+}
+.user-page .book-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+.user-page .book-header {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.user-page .book-image-container {
+  position: relative;
+}
+.user-page .book-image-container .book-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.user-page .book-image-container .book-rating-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 215, 0, 0.9);
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: #333;
+  font-weight: bold;
+}
+.user-page .book-info .book-name {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+.user-page .book-info .book-author {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+.user-page .book-info .price-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.user-page .book-info .price-section .book-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c5282;
+}
+.user-page .book-info .add-to-basket-btn {
+  background: #2c5282;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.3s ease;
+}
+.user-page .book-info .add-to-basket-btn:hover {
+  background: #1a365d;
+}
+.user-page .book-info .add-to-basket-btn .basket-icon {
+  font-size: 1.2rem;
+}
+.user-page .book-details {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+.user-page .book-details .book-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 2rem;
+}
+.user-page .book-details .book-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.user-page .book-details .book-meta p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+.user-page .book-details .book-meta p strong {
+  color: #333;
+}
+.user-page .book-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+}
+.user-page .no-book-found {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  padding: 2rem;
+}/*# sourceMappingURL=Book.page.css.map */
