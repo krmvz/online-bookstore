@@ -1,93 +1,95 @@
-/* General Page Styling */
 .books_page {
-  font-family: "Inter", sans-serif;
-  margin: 40px auto;
-  max-width: 1100px;
-  padding: 20px;
-  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
-
-.page_title {
-  font-size: 2rem;
+.books_page .page_title {
+  font-size: 2.5rem;
   color: #333;
-  margin-bottom: 30px;
-  font-weight: bold;
+  margin-bottom: 2rem;
 }
-
-/* Books Grid - More books per row */
-.books_list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
-  justify-content: center;
+.books_page .search_area {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
-
-/* Individual Book Card */
-.book_card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.2s ease-in-out;
-}
-
-.book_card:hover {
-  transform: translateY(-4px);
-}
-
-/* Book Image */
-.book_image {
-  width: 120px;
-  height: 180px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 5px;
-}
-
-/* Book Title */
-.book_title {
+.books_page .search_area .search_input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 2px solid #eee;
+  border-radius: 6px;
   font-size: 1rem;
-  color: #333;
-  font-weight: bold;
-  margin-top: 10px;
 }
-
-/* Price */
-.book_price {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #3498db;
-  margin-top: 5px;
+.books_page .search_area .search_input:focus {
+  outline: none;
+  border-color: #2c5282;
 }
-
-/* Add to Basket Button */
-.add_to_basket_btn {
-  background-color: #3498db;
+.books_page .search_area .search_btn {
+  padding: 0.8rem 1.5rem;
+  background: #2c5282;
   color: white;
   border: none;
-  padding: 8px 12px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  border-radius: 5px;
-  margin-top: 10px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  outline: none;
+  transition: background 0.3s ease;
 }
-
-.add_to_basket_btn:hover {
-  background-color: #2980b9;
-  transform: scale(1.05);
+.books_page .search_area .search_btn:hover {
+  background: #1a365d;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-  .books_list {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  }
-  .book_image {
-    width: 100px;
-    height: 150px;
-  }
+.books_page .books_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.books_page .books_list .book_card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.books_page .books_list .book_card:hover {
+  transform: translateY(-5px);
+}
+.books_page .books_list .book_card .book_image {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.books_page .books_list .book_card .book_title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.books_page .books_list .book_card .book_author {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+.books_page .books_list .book_card .book_price {
+  color: #2c5282;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.books_page .books_list .book_card .add_to_basket_btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #2c5282;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.books_page .books_list .book_card .add_to_basket_btn:hover {
+  background: #1a365d;
+}
+.books_page .no_results {
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+  padding: 2rem;
 }/*# sourceMappingURL=Books.page.css.map */

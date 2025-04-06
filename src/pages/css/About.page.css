@@ -1,120 +1,59 @@
-.about-page {
+.about-us {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
-.about-page .about-container {
+.about-us .page-title {
+  font-size: 2.5rem;
+  color: #2c5282;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.about-us .content-section {
   background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.about-page .about-title {
-  font-size: 2.5rem;
-  color: #333;
+.about-us .content-section .mission {
   margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid #eee;
 }
-.about-page .hero-section {
-  margin-bottom: 3rem;
-}
-.about-page .hero-section h2 {
+.about-us .content-section .mission h2 {
+  color: #333;
   font-size: 1.8rem;
-  color: #2c5282;
   margin-bottom: 1rem;
-  text-align: left;
 }
-.about-page .hero-section p {
+.about-us .content-section .mission p {
+  color: #666;
   line-height: 1.6;
-  color: #666;
-  text-align: left;
+  font-size: 1.1rem;
 }
-.about-page .mission-section {
-  margin-bottom: 3rem;
+.about-us .content-section .contact-info {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
 }
-.about-page .mission-section h2 {
+.about-us .content-section .contact-info h2 {
+  color: #333;
   font-size: 1.8rem;
-  color: #2c5282;
-  margin-bottom: 1.5rem;
-  text-align: left;
-}
-.about-page .mission-section .mission-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-.about-page .mission-section .mission-card {
-  background: #f8f9fa;
-  padding: 2rem;
-  border-radius: 8px;
-  text-align: left;
-}
-.about-page .mission-section .mission-card .icon-wrapper {
-  font-size: 2rem;
   margin-bottom: 1rem;
 }
-.about-page .mission-section .mission-card h3 {
-  color: #2c5282;
-  margin-bottom: 0.5rem;
-}
-.about-page .mission-section .mission-card p {
-  color: #666;
-}
-.about-page .stats-section {
-  margin-bottom: 3rem;
-}
-.about-page .stats-section .stats-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-}
-.about-page .stats-section .stat-card {
-  background: #2c5282;
-  padding: 2rem;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.about-page .stats-section .stat-card .stat-number {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 0.5rem;
-}
-.about-page .stats-section .stat-card .stat-label {
-  color: #e2e8f0;
-}
-.about-page .contact-section h2 {
-  font-size: 1.8rem;
-  color: #2c5282;
-  margin-bottom: 1.5rem;
-  text-align: left;
-}
-.about-page .contact-section .contact-cards {
+.about-us .content-section .contact-info .info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
-.about-page .contact-section .contact-card {
-  background: #f8f9fa;
-  padding: 1.5rem;
+.about-us .content-section .contact-info .info-grid .info-item {
+  padding: 1rem;
+  background: #f7fafc;
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
 }
-.about-page .contact-section .contact-card .contact-icon {
-  font-size: 1.5rem;
+.about-us .content-section .contact-info .info-grid .info-item h3 {
+  color: #2c5282;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
-.about-page .contact-section .contact-card p {
+.about-us .content-section .contact-info .info-grid .info-item p {
   color: #666;
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  .about-page {
-    padding: 1rem;
-  }
+  line-height: 1.5;
 }/*# sourceMappingURL=About.page.css.map */
