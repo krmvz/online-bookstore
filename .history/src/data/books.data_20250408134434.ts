@@ -211,7 +211,7 @@ const books: Book[] = [
     short_info_about_book: "Ыйык Курандын маанилеринин кыргыз адабий тилиндеги котормосу жана кыскача түшүндүрмөсүнөн турган бул китеп көп жылдык изденүүнүн, үзүрлүү эмгектин натыйжасы катары жарыкка чыгып, эл менен жүз көрүшүп олтурат. Жалпы окурмандар чөйрөсүнө сунушталат.",
     rating: 5.0,
     country_category: "local",
-    image: "https://bookhouse.kg/media/galleryphoto/2024/1/d88150fc-2ffb-42c0-ba95-0f2492d514da.jpeg.360x460_q94.jpg",
+    image: "https://bookhouse.kg/media/galleryphoto/2023/8/1_2.jpg.600x780_q94.jpg",
     promotion: 0,
     active: true,
     new: true

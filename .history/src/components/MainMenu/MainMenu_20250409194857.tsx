@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { useCart } from "../../context/CartContext";
 import { useAuth } from "../../context/AuthContext";
-import {  AiOutlineShoppingCart } from "react-icons/ai";
-import { FaUserCircle } from "react-icons/fa";
+import { AiFillHome, AiOutlineShoppingCart, AiFillAudio } from "react-icons/ai";
+import { BiSolidBook, BiSolidBookReader } from "react-icons/bi";
+import { FaGift, FaUserCircle } from "react-icons/fa";
+import { MdInfo } from "react-icons/md";
 import { FiLogIn, FiLogOut } from "react-icons/fi";
 import "./MainMenu.scss";
 
@@ -21,11 +23,11 @@ export function MainMenu() {
   return (
     <nav className="main_menu">
       <Link to="/"> Башкы бет</Link>
-      <Link to="/books"> Китептер</Link>
-      <Link to="/audio-books"> Аудио китептер</Link>
-      <Link to="/e-books"> Электрондук китептер</Link>
-      <Link to="/gifts"> Белектер</Link>
-      <Link to="/about-us"> Биз жөнүндө</Link>
+      <Link to="/books"><BiSolidBook /> Китептер</Link>
+      <Link to="/audio-books"><AiFillAudio /> Аудио китептер</Link>
+      <Link to="/e-books"><BiSolidBookReader /> Электрондук китептер</Link>
+      <Link to="/gifts"><FaGift /> Белектер</Link>
+      <Link to="/about-us"><MdInfo /> Биз жөнүндө</Link>
       <Link to="/cart" className="cart_link">
         <AiOutlineShoppingCart />
         {cartItems.length > 0 && <span className="cart_count">{cartItems.length}</span>}

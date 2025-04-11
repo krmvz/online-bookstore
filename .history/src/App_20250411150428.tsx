@@ -6,6 +6,7 @@ import { HomePage } from "./pages/Home.page";
 import { BooksPage } from "./pages/Books.page";
 import { BookPage } from "./pages/Book.page";
 import { MainLayout } from "./layouts/MainLayout";
+import { CategoriesPage } from "./pages/Categories.page";
 import { CartPage } from "./pages/Cart.page";
 import { LoginPage } from "./pages/Login.page";
 import { RegisterPage } from "./pages/Register.page";

@@ -1,15 +1,13 @@
 .page-wrapper {
+  padding-top: 80px;  // Adjust this value based on your navbar height
   min-height: 100vh;
   background: #f7fafc;
-  margin-top: 50px;
 }
 
 .cart-container {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 5rem;
-  margin-top: 25px;  // Added this line
 
   h2 {
     margin-bottom: 2rem;
@@ -22,8 +20,6 @@
   padding: 2rem;
   font-size: 1.2rem;
   color: #4a5568;
-  margin-bottom: 5rem;
-  margin-top: 50px;  // Added this line
 }
 
 .cart-empty {
@@ -32,9 +28,7 @@
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 5rem;
-  margin-top: 50px;  // Added this line
-  
+
   svg {
     color: #2c5282;
     margin-bottom: 1rem;

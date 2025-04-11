@@ -189,33 +189,6 @@ const books: Book[] = [
     active: true,
     new: true
   },
-  {
-    id: "7",
-    name: "Кереметтүү Куран",
-    price: 1550,
-    e_price: 0,
-    audio_price: 0,
-    author: "-",
-    publisher: "Дилазык",
-    publication_year: 2023,
-    series: "Жок",
-    category: "Куран жана тажвид",
-    number_of_pages: 1024,
-    format: "240x170",
-    binding: "Катуу мукаба",
-    ISBN: "978-9967-9499-3-5",
-    age_restriction: 12,
-    language: "Кыргызча",
-    title_in_another_language: "-",
-    article_number: "BH-161849",
-    short_info_about_book: "Ыйык Курандын маанилеринин кыргыз адабий тилиндеги котормосу жана кыскача түшүндүрмөсүнөн турган бул китеп көп жылдык изденүүнүн, үзүрлүү эмгектин натыйжасы катары жарыкка чыгып, эл менен жүз көрүшүп олтурат. Жалпы окурмандар чөйрөсүнө сунушталат.",
-    rating: 5.0,
-    country_category: "local",
-    image: "https://bookhouse.kg/media/galleryphoto/2024/1/d88150fc-2ffb-42c0-ba95-0f2492d514da.jpeg.360x460_q94.jpg",
-    promotion: 0,
-    active: true,
-    new: true
-  },
 ];
 
 export { books };

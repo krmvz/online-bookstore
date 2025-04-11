@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 import { useCart } from "../../context/CartContext";
 import { useAuth } from "../../context/AuthContext";
 import {  AiOutlineShoppingCart } from "react-icons/ai";
-import { FaUserCircle } from "react-icons/fa";
+import { BiSolidBook, BiSolidBookReader } from "react-icons/bi";
+import { FaGift, FaUserCircle } from "react-icons/fa";
+import { MdInfo } from "react-icons/md";
 import { FiLogIn, FiLogOut } from "react-icons/fi";
 import "./MainMenu.scss";
 

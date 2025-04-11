@@ -52,22 +52,4 @@
   border: none;
   cursor: pointer;
   font-size: 1rem;
-}
-.main_menu svg {
-  font-size: 24px;
-  font-weight: bold;
-  margin-right: 8px;
-}
-.main_menu .cart_link svg, .main_menu .auth_btn svg {
-  margin-right: 0;
-}
-.main_menu .cart_count {
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  background: red;
-  color: white;
-  border-radius: 50%;
-  padding: 2px 6px;
-  font-size: 12px;
-}/*# sourceMappingURL=MainMenu.css.map */
+}/*# sourceMappingURL=MainMenu_20250409194815.css.map */
