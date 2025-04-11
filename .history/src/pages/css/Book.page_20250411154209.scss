@@ -1,0 +1,130 @@
+.book-details {
+  padding: 2rem;
+  margin-top: 25px;
+
+  .book-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .book-image {
+    flex: 0 0 300px;
+    
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .book-info {
+    flex: 1;
+
+    h1 {
+      font-size: 2rem;
+      color: #2d3748;
+      margin-bottom: 0.5rem;
+    }
+
+    .author {
+      font-size: 1.2rem;
+      color: #4a5568;
+      margin-bottom: 1.5rem;
+    }
+
+    .format-toggles {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+
+      .format-btn {
+        padding: 0.8rem 1.5rem;
+        border: 2px solid #2c5282;
+        border-radius: 6px;
+        background: none;
+        color: #2c5282;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 1rem;
+
+        &:hover {
+          background: #ebf4ff;
+        }
+
+        &.active {
+          background: #2c5282;
+          color: white;
+        }
+      }
+    }
+
+    .price-section {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+
+      .price {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #2c5282;
+      }
+
+      .add-to-cart-btn {
+        padding: 0.8rem 2rem;
+        background: #2c5282;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        font-size: 1rem;
+
+        &:hover {
+          background: #1a365d;
+        }
+      }
+    }
+
+    .book-metadata {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: #f7fafc;
+      border-radius: 8px;
+
+      p {
+        margin: 0.5rem 0;
+        color: #4a5568;
+
+        strong {
+          color: #2d3748;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    .description {
+      color: #4a5568;
+      line-height: 1.6;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .book-container {
+    flex-direction: column;
+    
+    .book-image {
+      flex: 0 0 auto;
+      max-width: 250px;
+      margin: 0 auto;
+    }
+  }
+}
