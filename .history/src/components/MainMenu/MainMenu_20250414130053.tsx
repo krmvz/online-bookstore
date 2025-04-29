@@ -22,7 +22,7 @@ export function MainMenu() {
     <nav className="main_menu">
       <Link to="/"> Башкы бет</Link>
       <Link to="/books"> Китептер</Link>
-      <Link to="/audiobooks"> Аудио китептер</Link>
+      <Link to="/audio-books"> Аудио китептер</Link>
       <Link to="/ebooks"> Электрондук китептер</Link>
       <Link to="/gifts"> Белектер</Link>
       <Link to="/about-us"> Биз жөнүндө</Link>

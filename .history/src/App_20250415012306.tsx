@@ -13,7 +13,6 @@ import { ProfilePage } from "./pages/Profile.page";
 import { ProtectedRoute } from "./components/MainMenu/ProtectedRoute";
 import { EbooksPage } from "./pages/Ebooks.page";
 import { AudioBooksPage } from "./pages/AudioBooks.page";
-import { GiftsPage } from "./pages/Gifts.page";
 
 function App() {
   return (
@@ -33,6 +32,7 @@ function AppContent() {
           <Route path="/books/:id" element={<BookPage />} />
           <Route path="/ebooks" element={<EbooksPage />} />
           <Route path="/audiobooks" element={<AudioBooksPage />} />
+          {<AudioBooksPage />} />
           <Route path="/gifts" element={
             <ProtectedRoute>
               <GiftsPage />

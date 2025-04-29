@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { db } from '../config/firebase';
-import { collection, addDoc, query, where, deleteDoc, doc, updateDoc, onSnapshot, writeBatch } from 'firebase/firestore';
+import { collection, addDoc, query, where, deleteDoc, doc, updateDoc, onSnapshot } from 'firebase/firestore';
 import { auth } from '../config/firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 
@@ -19,7 +19,6 @@ interface CartContextType {
   addToCart: (book: CartItem) => Promise<void>;
   removeFromCart: (itemId: string) => Promise<void>;
   updateQuantity: (itemId: string, quantity: number) => Promise<void>;
-  clearCart: () => Promise<void>;
   cartItems: CartItem[];
   loading: boolean;
   isAddingToCart: boolean;
@@ -82,8 +81,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
           title: book.title,
           price: book.price,
           quantity: 1,
-          imageUrl: book.imageUrl,
-          format: book.format
+          imageUrl: book.imageUrl
         });
       }
     } catch (error) {
@@ -124,32 +122,13 @@ export function CartProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  const clearCart = async () => {
-    if (!userId) return;
-
-    try {
-      const batch = writeBatch(db);
-      cartItems.forEach(item => {
-        if (item.id) {
-          const docRef = doc(db, 'carts', item.id);
-          batch.delete(docRef);
-        }
-      });
-      await batch.commit();
-      setCartItems([]);
-    } catch (error) {
-      console.error('Error clearing cart:', error);
-    }
-  };
-
   const value = {
     cartItems,
     loading,
     isAddingToCart,
     addToCart,
     removeFromCart,
-    updateQuantity,
-    clearCart
+    updateQuantity
   };
 
   return (

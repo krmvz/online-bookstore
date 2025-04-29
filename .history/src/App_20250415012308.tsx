@@ -33,6 +33,7 @@ function AppContent() {
           <Route path="/books/:id" element={<BookPage />} />
           <Route path="/ebooks" element={<EbooksPage />} />
           <Route path="/audiobooks" element={<AudioBooksPage />} />
+          {<AudioBooksPage />} />
           <Route path="/gifts" element={
             <ProtectedRoute>
               <GiftsPage />
