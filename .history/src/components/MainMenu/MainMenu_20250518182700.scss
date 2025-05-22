@@ -1,0 +1,163 @@
+.main_menu {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #2c5282;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    .logo-icon {
+      font-size: 2rem;
+    }
+  }
+
+  .search-container {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 2rem;
+    position: relative;
+
+    input {
+      width: 100%;
+      padding: 0.5rem 2.5rem 0.5rem 1rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 1rem;
+
+      &:focus {
+        outline: none;
+        border-color: #2c5282;
+      }
+    }
+
+    .search-button {
+      position: absolute;
+      right: 0.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: #4a5568;
+      cursor: pointer;
+      font-size: 1.2rem;
+
+      &:hover {
+        color: #2c5282;
+      }
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 2rem;
+
+    .dropdown {
+      position: relative;
+
+      &:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-trigger {
+        text-decoration: none;
+        color: #4a5568;
+        padding: 0.5rem;
+
+        &:hover {
+          color: #2c5282;
+        }
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        padding: 0.5rem 0;
+        min-width: 200px;
+        z-index: 100;
+
+        a {
+          display: block;
+          padding: 0.5rem 1rem;
+          text-decoration: none;
+          color: #4a5568;
+
+          &:hover {
+            background: #f7fafc;
+            color: #2c5282;
+          }
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #4a5568;
+      padding: 0.5rem;
+
+      &:hover {
+        color: #2c5282;
+      }
+    }
+  }
+
+  .user-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .cart_link {
+      position: relative;
+      font-size: 1.5rem;
+      color: #4a5568;
+      text-decoration: none;
+
+      .cart_count {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background: #2c5282;
+        color: white;
+        font-size: 0.8rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 50%;
+      }
+    }
+
+    .auth-buttons, .user-menu {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .auth_btn {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.5rem;
+      border: none;
+      background: none;
+      color: #4a5568;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 1rem;
+
+      &:hover {
+        color: #2c5282;
+      }
+    }
+  }
+}

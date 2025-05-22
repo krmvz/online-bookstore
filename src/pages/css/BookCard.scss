@@ -1,0 +1,78 @@
+.book-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  
+    .book-image {
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+    }
+  
+    .book-info {
+      h3 {
+        margin: 0 0 8px;
+        font-size: 1.4rem;
+      }
+  
+      .author {
+        color: #666;
+        margin-bottom: 8px;
+      }
+  
+      .category {
+        color: #888;
+        font-size: 0.9rem;
+      }
+    }
+  
+    .store-prices {
+      grid-column: 1 / -1;
+  
+      h4 {
+        margin: 0 0 12px;
+        color: #333;
+      }
+  
+      .store-price-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        border-bottom: 1px solid #eee;
+  
+        .store-name {
+          font-weight: 500;
+        }
+  
+        .price {
+          color: #2c5282;
+          font-weight: bold;
+        }
+  
+        .stock-status {
+          padding: 4px 8px;
+          border-radius: 4px;
+          font-size: 0.9rem;
+  
+          &.in-stock {
+            background: #c6f6d5;
+            color: #2f855a;
+          }
+  
+          &.out-of-stock {
+            background: #fed7d7;
+            color: #c53030;
+          }
+        }
+      }
+    }
+  }

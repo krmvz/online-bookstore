@@ -1,59 +1,58 @@
 import { Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import { CartProvider } from "./context/CartContext";
-import { AboutPage } from "./pages/About.page";
+import { MainLayout } from "./layouts/MainLayout";
 import { HomePage } from "./pages/Home.page";
 import { BooksPage } from "./pages/Books.page";
 import { BookPage } from "./pages/Book.page";
-import { MainLayout } from "./layouts/MainLayout";
+import { BookComparisonPage } from "./pages/BookComparison.page";
 import { CartPage } from "./pages/Cart.page";
 import { LoginPage } from "./pages/Login.page";
 import { RegisterPage } from "./pages/Register.page";
 import { ProfilePage } from "./pages/Profile.page";
+import { AboutPage } from "./pages/About.page";
+import { StoresPage } from "./pages/Stores.page";
 import { ProtectedRoute } from "./components/MainMenu/ProtectedRoute";
-import { EbooksPage } from "./pages/Ebooks.page";
-import { AudioBooksPage } from "./pages/AudioBooks.page";
-import { GiftsPage } from "./pages/Gifts.page";
+import { BookSearchProvider } from './context/BookSearchContext';
+
 
 function App() {
   return (
     <AuthProvider>
-      <AppContent />
+      <BookSearchProvider>
+        <AppContent />
+      </BookSearchProvider>
     </AuthProvider>
   );
 }
 
 function AppContent() {
   return (
-    <CartProvider>
-      <Routes>
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/books" element={<BooksPage />} />
-          <Route path="/books/:id" element={<BookPage />} />
-          <Route path="/ebooks" element={<EbooksPage />} />
-          <Route path="/audiobooks" element={<AudioBooksPage />} />
-          <Route path="/gifts" element={
-            <ProtectedRoute>
-              <GiftsPage />
-            </ProtectedRoute>
-          } />
-          <Route path="/about-us" element={<AboutPage />} />
-          <Route path="/cart" element={
-            <ProtectedRoute>
-              <CartPage />
-            </ProtectedRoute>
-          } />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/register" element={<RegisterPage />} />
-          <Route path="/profile" element={
-            <ProtectedRoute>
-              <ProfilePage />
-            </ProtectedRoute>
-          } />
-        </Route>
-      </Routes>
-    </CartProvider>
+    <Routes>
+      <Route element={<MainLayout />}>
+        {/* Public Routes */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/books" element={<BooksPage />} />
+        <Route path="/books/:id" element={<BookPage />} />
+        <Route path="/book-comparison" element={<BookComparisonPage />} />
+        <Route path="/stores" element={<StoresPage />} />
+        <Route path="/about-us" element={<AboutPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+
+        {/* Protected Routes */}
+        <Route path="/cart" element={
+          <ProtectedRoute>
+            <CartPage />
+          </ProtectedRoute>
+        } />
+        <Route path="/profile" element={
+          <ProtectedRoute>
+            <ProfilePage />
+          </ProtectedRoute>
+        } />
+      </Route>
+    </Routes>
   );
 }
 
