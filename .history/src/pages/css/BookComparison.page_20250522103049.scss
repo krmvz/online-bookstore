@@ -1,0 +1,196 @@
+.book-comparison-page {
+  padding: 20px;
+
+  .comparison-header {
+    margin-bottom: 20px;
+    
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .search-query {
+      color: #666;
+      font-style: italic;
+    }
+  }
+
+  .comparison-controls {
+    margin-bottom: 20px;
+
+    .control-group {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      .sort-select {
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+      }
+
+      .filter-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+  }
+
+  .book-comparison-card {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+
+    .book-info {
+      flex: 0 0 300px;
+      display: flex;
+      gap: 15px;
+
+      .book-image {
+        width: 120px;
+        height: 180px;
+        overflow: hidden;
+        
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .book-details {
+        flex: 1;
+        
+        h2 {
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+
+        .author {
+          color: #666;
+          margin-bottom: 4px;
+        }
+
+        .category {
+          color: #888;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .store-comparison {
+      flex: 1;
+      border-left: 1px solid #eee;
+      padding-left: 20px;
+
+      h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+
+      .store-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .store-item {
+          border: 1px solid #eee;
+          border-radius: 6px;
+          overflow: hidden;
+
+          .store-header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: #f9f9f9;
+            gap: 10px;
+
+            .store-name-price {
+              flex: 1;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .store-name {
+                font-weight: 500;
+              }
+
+              .price {
+                font-weight: bold;
+                color: #2c5282;
+              }
+            }
+
+            .store-status {
+              .availability {
+                padding: 4px 8px;
+                border-radius: 4px;
+                font-size: 14px;
+
+                &.in-stock {
+                  background: #c6f6d5;
+                  color: #2f855a;
+                }
+
+                &.out-of-stock {
+                  background: #fed7d7;
+                  color: #c53030;
+                }
+              }
+            }
+
+            .details-toggle {
+              background: none;
+              border: none;
+              cursor: pointer;
+              padding: 4px;
+              color: #666;
+              transition: transform 0.2s;
+
+              &:hover {
+                color: #333;
+              }
+            }
+          }
+
+          .store-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+
+            &.expanded {
+              max-height: 200px;
+            }
+
+            .store-info {
+              padding: 10px;
+
+              .info-row {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 8px;
+                color: #666;
+                font-size: 14px;
+
+                i {
+                  width: 16px;
+                  color: #4a5568;
+                }
+
+                .email {
+                  color: #4299e1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

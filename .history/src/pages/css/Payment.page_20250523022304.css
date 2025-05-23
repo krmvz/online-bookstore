@@ -1,0 +1,50 @@
+.payment-details {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+.payment-details .bank-transfer-info,
+.payment-details .qr-code-section {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.payment-details .bank-transfer-info h3,
+.payment-details .qr-code-section h3 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.2rem;
+}
+.payment-details .bank-details p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+.payment-details .bank-details p strong {
+  color: #555;
+  margin-right: 0.5rem;
+}
+.payment-details .qr-code-section {
+  text-align: center;
+}
+.payment-details .qr-code-section .qr-code {
+  width: 200px;
+  height: 200px;
+  margin: 1rem auto;
+  display: block;
+}
+.payment-details .qr-code-section p {
+  color: #666;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .payment-details {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=Payment.page_20250523022304.css.map */

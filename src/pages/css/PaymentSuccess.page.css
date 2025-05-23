@@ -1,0 +1,64 @@
+.payment-success {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.payment-success .success-icon {
+  color: #28a745;
+  margin-bottom: 1.5rem;
+}
+.payment-success .success-icon svg {
+  animation: scaleIn 0.5s ease-out;
+}
+.payment-success h1 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+.payment-success p {
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+.payment-success .action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.payment-success .action-buttons a {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+.payment-success .action-buttons a.home-button {
+  background: #007bff;
+  color: #fff;
+}
+.payment-success .action-buttons a.home-button:hover {
+  background: #0056b3;
+}
+.payment-success .action-buttons a.shop-button {
+  background: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+}
+.payment-success .action-buttons a.shop-button:hover {
+  background: #e9ecef;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=PaymentSuccess.page.css.map */

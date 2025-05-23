@@ -1,0 +1,170 @@
+.payment-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.payment-empty {
+  text-align: center;
+  padding: 3rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 600px;
+
+  h2 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #666;
+  }
+}
+
+.payment-summary {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+}
+
+.order-items {
+  margin-bottom: 2rem;
+}
+
+.order-item {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+
+  img {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .item-details {
+    h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    p {
+      color: #666;
+      margin: 0;
+    }
+  }
+
+  .item-total {
+    font-weight: bold;
+    color: #333;
+  }
+}
+
+.cost-breakdown {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 2px solid #eee;
+
+  .cost-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    color: #666;
+
+    &.total {
+      font-weight: bold;
+      color: #333;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #eee;
+    }
+  }
+}
+
+.delivery-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1rem;
+
+      &.error {
+        border-color: #dc3545;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+    }
+
+    .error-message {
+      color: #dc3545;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+      display: block;
+    }
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 1rem;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover:not(:disabled) {
+      background: #0056b3;
+    }
+
+    &:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+  }
+}

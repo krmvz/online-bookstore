@@ -1,56 +1,100 @@
 .book-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  padding: 24px;
   margin: 16px;
   display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 20px;
+  grid-template-columns: 180px 1fr;
+  gap: 24px;
   background: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.book-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.book-card .book-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .book-card .book-image img {
   width: 100%;
-  height: auto;
-  border-radius: 4px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.book-card .book-image img:hover {
+  transform: scale(1.05);
+}
+.book-card .book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .book-card .book-info h3 {
-  margin: 0 0 8px;
-  font-size: 1.4rem;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a202c;
+  line-height: 1.3;
 }
 .book-card .book-info .author {
-  color: #666;
-  margin-bottom: 8px;
+  color: #4a5568;
+  font-size: 1.1rem;
+  margin: 0;
 }
 .book-card .book-info .category {
-  color: #888;
-  font-size: 0.9rem;
+  color: #718096;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 4px;
 }
 .book-card .store-prices {
   grid-column: 1/-1;
+  margin-top: 16px;
+  background: #f7fafc;
+  border-radius: 8px;
+  padding: 16px;
 }
 .book-card .store-prices h4 {
-  margin: 0 0 12px;
-  color: #333;
+  margin: 0 0 16px;
+  color: #2d3748;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 .book-card .store-prices .store-price-item {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
   align-items: center;
-  padding: 8px;
-  border-bottom: 1px solid #eee;
+  padding: 12px;
+  border-radius: 6px;
+  background: white;
+  margin-bottom: 8px;
+  transition: background-color 0.2s ease;
+}
+.book-card .store-prices .store-price-item:hover {
+  background: #edf2f7;
 }
 .book-card .store-prices .store-price-item .store-name {
   font-weight: 500;
+  color: #2d3748;
 }
 .book-card .store-prices .store-price-item .price {
-  color: #2c5282;
-  font-weight: bold;
+  color: #2b6cb0;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 .book-card .store-prices .store-price-item .stock-status {
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 6px 12px;
+  border-radius: 6px;
   font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
 }
 .book-card .store-prices .store-price-item .stock-status.in-stock {
   background: #c6f6d5;
@@ -59,4 +103,12 @@
 .book-card .store-prices .store-price-item .stock-status.out-of-stock {
   background: #fed7d7;
   color: #c53030;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: 24px;
+  padding: 24px;
+  background: #f8fafc;
 }/*# sourceMappingURL=BookCard.css.map */

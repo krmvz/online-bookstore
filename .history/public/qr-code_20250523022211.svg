@@ -1,0 +1,32 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- QR Code Pattern -->
+  <rect width="256" height="256" fill="white"/>
+  <g fill="black">
+    <!-- Position Detection Patterns -->
+    <rect x="32" y="32" width="48" height="48"/>
+    <rect x="176" y="32" width="48" height="48"/>
+    <rect x="32" y="176" width="48" height="48"/>
+    
+    <!-- Inner Position Squares -->
+    <rect x="44" y="44" width="24" height="24" fill="white"/>
+    <rect x="188" y="44" width="24" height="24" fill="white"/>
+    <rect x="44" y="188" width="24" height="24" fill="white"/>
+    
+    <!-- Data Pattern (Simplified) -->
+    <rect x="96" y="32" width="8" height="8"/>
+    <rect x="112" y="48" width="8" height="8"/>
+    <rect x="128" y="32" width="8" height="8"/>
+    <rect x="144" y="48" width="8" height="8"/>
+    
+    <rect x="32" y="96" width="8" height="8"/>
+    <rect x="48" y="112" width="8" height="8"/>
+    <rect x="32" y="128" width="8" height="8"/>
+    <rect x="48" y="144" width="8" height="8"/>
+    
+    <!-- Additional Data Pattern -->
+    <rect x="96" y="96" width="64" height="64"/>
+    <rect x="176" y="96" width="48" height="48"/>
+    <rect x="96" y="176" width="48" height="48"/>
+    <rect x="160" y="160" width="64" height="64"/>
+  </g>
+</svg>

@@ -1,0 +1,88 @@
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+.container .payment-details {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+.container .payment-details .payment-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+}
+.container .payment-details .payment-sections .bank-transfer-info,
+.container .payment-details .payment-sections .qr-code-section {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+.container .payment-details .payment-sections .bank-transfer-info:hover,
+.container .payment-details .payment-sections .qr-code-section:hover {
+  transform: translateY(-5px);
+}
+.container .payment-details .payment-sections .bank-transfer-info h3,
+.container .payment-details .payment-sections .qr-code-section h3 {
+  color: #2c5282;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.container .payment-details .payment-sections .bank-details p {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+.container .payment-details .payment-sections .bank-details p strong {
+  min-width: 120px;
+  color: #4a5568;
+}
+.container .payment-details .payment-sections .bank-details p span {
+  color: #2d3748;
+  font-weight: 500;
+}
+.container .payment-details .payment-sections .qr-code-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .payment-details .payment-sections .qr-code-section .qr-code {
+  width: 220px;
+  height: 220px;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.container .payment-details .payment-sections .qr-code-section p {
+  color: #4a5568;
+  font-size: 1rem;
+  text-align: center;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+  .container .payment-details {
+    padding: 1.5rem;
+  }
+  .container .payment-details .payment-sections {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .container .payment-details .payment-sections .bank-transfer-info,
+  .container .payment-details .payment-sections .qr-code-section {
+    padding: 1.5rem;
+  }
+}/*# sourceMappingURL=Payment.page_20250523023247.css.map */
